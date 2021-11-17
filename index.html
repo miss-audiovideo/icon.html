@@ -44,7 +44,13 @@
       .luxury-heading {
         text-align: center;
       font-family: futuramedium;
-  }
+      }
+      .luxury-heading img{
+        margin-bottom: -600px;
+        margin-left: -20px;
+        z-index:+1;
+
+      }
       
       .luxury {
         padding: 0 10vw 0 0;
@@ -52,10 +58,12 @@
         text-shadow: 0px 0px 13px #eaeaf025;
         color: #eaeaf0 !important;
         font-family:cinzeldecorativebold;
+        z-index: -2;
       }
       .luxury span {
         font-size: 3vw;
         color: #eaeaf0 !important;
+        z-index: -1;
       }
       .design {
         position: absolute;
@@ -64,12 +72,14 @@
         text-shadow: 0px 0px 13px #ffc85725;
         color: #ffc857 !important;
         font-family: cinzelbold;
+        z-index:-1;
       }
       @media (max-width: 500px) {
         .robo-set-1 {
           margin-top: 40%;
           margin-bottom: 10%;
         }
+       
       }
       /* ...................... TODO first page ................................... */
       .firstPage {
@@ -335,6 +345,7 @@
                 <div class="intro">
                   <div data-aos="fade-up" class="robo-set-1">
                     <div class="luxury-heading">
+                      <img src="./assets/img/Robo-1.gif" alt="">
                       <div class="luxury">Luxury<span>of</span></div>
                       <div class="design">Design</div>
                     </div>
