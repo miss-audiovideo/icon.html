@@ -271,7 +271,6 @@ body {
   align-items: center;
 }
 .l-side-nav::before {
-  content: "";
   position: absolute;
   top: 50%;
   left: 0;
