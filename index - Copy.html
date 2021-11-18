@@ -11,46 +11,73 @@
   <link rel="stylesheet" href="assets/css/main.css">
   
   <style>
-    .robo-set-1 {
-      padding: 0 10% 10%;
-      height: 30vw;
-      position: relative;
-      margin-top: 10%;
-    }
-    .robo {
-      position: absolute;
-      top: 20vw;
-      right: 62vw;
-      width: 56vw;
-      height: auto;
-      transform: scaleX(-1) translate(-50%, -50%);
-    }
-    .luxury-heading {
-      text-align: center;
-    }
-    .luxury {
-      padding: 0 10vw 0 0;
-      font-size: 12vw;
-      text-shadow: 0px 0px 13px #eaeaf025;
-      color: #eaeaf0 !important;
-    }
-    .luxury span {
-      font-size: 3vw;
-      color: #eaeaf0 !important;
-    }
-    .design {
-      position: absolute;
-      margin: -6vw 0vw 0vw 18vw;
-      font-size: 10vw;
-      text-shadow: 0px 0px 13px #ffc85725;
-      color: #ffc857 !important;
-    }
-    @media (max-width: 500px) {
-      .robo-set-1 {
-        margin-top: 40%;
-        margin-bottom: 10%;
+    @font-face {
+  font-family:Cinzel;
+  src: url("assets/fonts/CinzelDecorative-Bold.ttf");
+}
+@font-face {
+  font-family:Cinzelbold;
+  src: url("./assets/fonts/Cinzel-Bold.ttf");
+}
+.robo-set-1 {
+        padding: 0 10% 10%;
+        height: 30vw;
+        position: relative;
+        margin-top: 10%;
       }
-    }
+      .robo {
+        position: absolute;
+        top: 20vw;
+        right: 62vw;
+        width: 56vw;
+        height: auto;
+        transform: scaleX(-1) translate(-50%, -50%);
+      }
+      .luxury-heading {
+        text-align: center;
+      font-family: futuramedium;
+      }
+      .luxury-heading img{
+        margin-bottom: -600px;
+        margin-left: -20px;
+        z-index:+1;
+
+      }
+      
+      .luxury {
+        padding: 0 10vw 0 0;
+        font-size: 12vw;
+        text-shadow: 0px 0px 13px #eaeaf025;
+        color: #eaeaf0 !important;
+        font-family:cinzeldecorativebold;
+        z-index: -2;
+      }
+      .luxury span {
+        font-size: 3vw;
+        color: #eaeaf0 !important;
+        z-index: -1;
+      }
+      .design {
+        position: absolute;
+        margin: -6vw 0vw 0vw 29vw;
+        font-size: 10vw;
+        text-shadow: 0px 0px 13px #ffc85725;
+        color: #ffc857 !important;
+        font-family: cinzelbold;
+        z-index:-1;
+      }
+      @media (max-width: 500px) {
+        .robo-set-1 {
+          margin-top: 40%;
+          margin-bottom: 10%;
+        }
+        .luxury-img{
+          width:200px !important;
+          height:200px !important;
+          transform:translateX(30px);
+        }
+       
+      }
     /* -------------------------------------------TODO firstpage css------------------------------------------- */
     .firstPage {
         display: flex;
@@ -289,8 +316,10 @@
       <div class="l-wrapper">
         <header class="header">
           <a class="header--logo" href="#0">
-            <img src="assets/img/logo.png" alt="Global">
-            <p>Global</p>
+            <!-- <img src="assets/img/logo.png" alt="Global"> -->
+            <img src="assets/img/homeLogo.png" width="150px"
+            height="50px" alt="Global" />
+            <!-- <p>Global</p> -->
           </a>
           <button class="header--cta cta">Hire Us</button>
           <div class="header--nav-toggle">
@@ -311,6 +340,7 @@
             <div class="intro">
               <div data-aos="fade-up" class="robo-set-1">
                 <div class="luxury-heading">
+                  <img src="./assets/img/Robo-1.gif" alt="" width="">
                   <div class="luxury">
                     Luxury<span>of</span>
                   </div>
@@ -385,6 +415,7 @@
                   Do you need help with <br />
                   your graphic design ?
                 </h1>
+               
                 <center>
                   <button class="left-btn">Get in touch</button>
                 </center>
