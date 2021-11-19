@@ -252,10 +252,10 @@ body {
 }
 .l-wrapper {
   position: relative;
-  width: 1440px;
-  max-width: 90%;
+  /* width: 1440px;
+  max-width: 90%; */
   height: 100%;
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
 .l-side-nav {
   position: absolute;
@@ -784,8 +784,8 @@ body {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 960px;
-  max-width: 80%;
+  /* width: 960px;
+  max-width: 80%; */
   height: 100%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -796,7 +796,7 @@ body {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
 @media (max-width: 1180px) {
   .work {
